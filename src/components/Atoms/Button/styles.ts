@@ -1,3 +1,5 @@
+import media from 'styled-media-query'
+
 import styled, { css } from 'styled-components'
 import { ButtonProps } from '.'
 
@@ -16,9 +18,9 @@ export const Wrapper = styled.button<WrapperProps>`
       ${theme.colors.primary} 0%,
       ${theme.colors.tertiary} 99.18%
     );
-    box-shadow: 0px 10px 25px ${theme.colors.shadow};
     border-radius: 8px;
-    padding: 14px 50px;
+    padding: 14px;
+    text-align: center;
     width: auto;
     ${!!fullWidth && WrapperModifiers.fullWIdth()}
     color: ${theme.colors.white};
@@ -29,9 +31,15 @@ export const Wrapper = styled.button<WrapperProps>`
     border: none;
     cursor: pointer;
     transition: ${theme.transition.default};
+    transition-property: opacity;
 
-    &:hover {
-      opacity: 0.9;
-    }
+    ${media.greaterThan('medium')`
+      box-shadow: 0px 10px 25px ${theme.colors.shadow};
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+    `}
   `}
 `

@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Button, { ButtonProps } from '.'
 
 export default {
-  title: 'Button',
+  title: '/Atoms/Buttons/Button',
   component: Button,
   argTypes: {
     children: {
@@ -11,9 +11,13 @@ export default {
   }
 } as Meta
 
-export const Default: Story<ButtonProps> = (args) => <Button {...args} />
+export const Default: Story<ButtonProps> = (args) => (
+  <div style={{ width: '100%', maxWidth: '300px' }}>
+    <Button {...args} />
+  </div>
+)
 
 Default.args = {
   children: 'Button',
-  fullWidth: false
+  fullWidth: true
 }

@@ -24,9 +24,11 @@ export default {
     quaternary: '#130525',
     shadow: '#cf99db',
     mainBg: '#FAF5FF',
-    white: '#FFF'
+    white: '#FFF',
+    error: '#FF377F'
   },
   spacings: {
+    xxxsmall: '8px',
     xxsmall: '12px',
     xsmall: '14px',
     small: '16px',
