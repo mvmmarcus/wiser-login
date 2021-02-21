@@ -1,11 +1,14 @@
 import * as S from './styles'
 
-type Props = {
+export type ButtonProps = {
   children: React.ReactNode
+  fullWidth?: boolean
 }
 
-const Button = ({ children }: Props) => {
-  return <S.Button>{children}</S.Button>
-}
+const Button = ({ children, fullWidth = false }: ButtonProps) => (
+  <S.Wrapper data-testid="button-wrapper" fullWidth={fullWidth}>
+    {children}
+  </S.Wrapper>
+)
 
 export default Button
