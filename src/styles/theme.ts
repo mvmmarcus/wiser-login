@@ -20,8 +20,9 @@ export default {
   colors: {
     primary: '#383e71',
     secondary: '#989fdb',
-    tertiary: '#882f9c',
+    tertiary: '#9d25b0',
     quaternary: '#130525',
+    shadow: '#cf99db',
     mainBg: '#FAF5FF',
     white: '#FFF'
   },
