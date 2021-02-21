@@ -1,5 +1,12 @@
-import Main from 'components/Main'
+import Auth from 'components/Templates/Auth'
 
 export default function Home() {
-  return <Main />
+  return (
+    <Auth
+      title="Olá, seja bem-vindo!"
+      description="Para acessar a plataforma, faça seu login."
+    >
+      teste
+    </Auth>
+  )
 }
