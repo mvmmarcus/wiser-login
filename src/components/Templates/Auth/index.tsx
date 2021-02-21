@@ -8,19 +8,15 @@ type Props = {
 
 const Auth = ({ children, title, description }: Props) => (
   <S.Wrapper>
-    <S.IllustrationWrapper>
-      <S.IllustrationGradient />
-
-      <S.Illustration
-        src="/img/login-illustration.png"
-        alt="A woman using her computer"
-      />
-    </S.IllustrationWrapper>
-
+    <S.Illustration data-testid="auth-login-bg-img" />
     <S.ContentWrapper>
-      <S.Title>{title}</S.Title>
-      <S.Description>{description}</S.Description>
-      <S.Content>{children}</S.Content>
+      <S.Content>
+        <S.Title data-testid="auth-login-title">{title}</S.Title>
+        <S.Description data-testid="auth-login-description">
+          {description}
+        </S.Description>
+        {children}
+      </S.Content>
     </S.ContentWrapper>
   </S.Wrapper>
 )
