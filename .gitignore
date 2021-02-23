@@ -12,6 +12,9 @@
 # production
 /build
 
+# coverage
+/coverage
+
 # misc
 .DS_Store
 
@@ -32,3 +35,4 @@ public/workbox-*.js
 
 # storybook
 storybook-static
+
