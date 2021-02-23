@@ -23,12 +23,14 @@ describe('<Input />', () => {
   it('should render with error', () => {
     renderWithTheme(<Input error={true} labelText="Label" />)
 
+    const inputContainer = screen.getByTestId('input-container')
     const inputWrapper = screen.getByTestId('input-wrapper')
     const label = screen.getByTestId('input-label')
     const input = screen.getByTestId('input-input')
     const errorMessage = screen.getByTestId('input-error-message')
     const iconError = screen.getByTestId('input-icon-error')
 
+    expect(inputContainer).toBeInTheDocument()
     expect(inputWrapper).toBeInTheDocument()
     expect(label).toBeInTheDocument()
     expect(errorMessage).toBeInTheDocument()
@@ -38,13 +40,25 @@ describe('<Input />', () => {
     expect(input).toHaveStyle({ border: `1px solid ${theme.colors.error}` })
   })
 
-  it('should render input and can be modified', async () => {
+  it('should render type email input and can be modified', async () => {
     renderWithTheme(<Input error={false} type="email" labelText="Label" />)
 
     await act(async () => {
       fireEvent.change(screen.getByTestId('input-input'), {
         target: {
           value: 'test@test.com'
+        }
+      })
+    })
+  })
+
+  it('should render type password input and can be modified', async () => {
+    renderWithTheme(<Input error={false} type="password" labelText="Label" />)
+
+    await act(async () => {
+      fireEvent.change(screen.getByTestId('input-input'), {
+        target: {
+          value: 'pass1234'
         }
       })
     })

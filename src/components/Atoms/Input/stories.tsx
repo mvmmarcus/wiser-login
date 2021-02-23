@@ -18,7 +18,7 @@ export default {
 } as Meta
 
 export const Default: Story<InputProps> = (args) => (
-  <div style={{ width: '100%', maxWidth: '300px' }}>
+  <div style={{ width: '100%', maxWidth: '300px', margin: 'auto' }}>
     <Input {...args} />
   </div>
 )
@@ -28,7 +28,7 @@ Default.args = {
 }
 
 export const WithError: Story<InputProps> = (args) => (
-  <div style={{ width: '100%', maxWidth: '300px' }}>
+  <div style={{ width: '100%', maxWidth: '300px', margin: 'auto' }}>
     <Input {...args} />
   </div>
 )
