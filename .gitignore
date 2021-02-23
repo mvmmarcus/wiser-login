@@ -32,3 +32,10 @@ public/workbox-*.js
 
 # storybook
 storybook-static
+
+# coverage
+/coverage/lcov-report
+/coverage/clover.xml
+/coverage-final.json
+/coverage/coverage-summary.json
+/coverage/icov.info
