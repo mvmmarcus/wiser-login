@@ -32,6 +32,7 @@ This project uses lot of stuff as:
 - [Redux](https://redux.js.org/)
 - [Redux Saga](https://redux-saga.js.org/)
 - [Storybook](https://storybook.js.org/)
+- [Json Server](https://www.npmjs.com/package/json-server)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
