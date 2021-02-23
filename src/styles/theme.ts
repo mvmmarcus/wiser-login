@@ -25,7 +25,8 @@ export default {
     shadow: '#cf99db',
     mainBg: '#FAF5FF',
     white: '#FFF',
-    error: '#FF377F'
+    error: '#FF377F',
+    success: '#4BB543'
   },
   spacings: {
     xxxsmall: '8px',
