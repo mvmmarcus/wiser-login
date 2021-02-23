@@ -1,6 +1,11 @@
 
 # WISER LOGIN
 
+![coverage](/coverage/badge-functions.svg)
+![coverage](/coverage/badge-lines.svg)
+![coverage](/coverage/badge-statements.svg)
+![coverage](/coverage/badge-branches.svg)
+
 This is a [Next.js](https://nextjs.org/) application to selective process for [Wiser Education](https://wisereducacao.com/).
 
 ## What is inside?
@@ -11,11 +16,21 @@ This is a [Next.js](https://nextjs.org/) application to selective process for [W
 
 This project uses lot of stuff as:
 
+![react](https://aleen42.github.io/badges/src/react.svg)
+![ts](https://flat.badgen.net/badge/-/TypeScript?icon=typescript&label&labelColor=blue&color=555555)
+[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
+![storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)
+![redux](https://aleen42.github.io/badges/src/redux.svg)
+![eslint](https://aleen42.github.io/badges/src/eslint.svg)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 - [TypeScript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
 - [Styled Components](https://styled-components.com/)
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [Redux](https://redux.js.org/)
+- [Redux Saga](https://redux-saga.js.org/)
 - [Storybook](https://storybook.js.org/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
