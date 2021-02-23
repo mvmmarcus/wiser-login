@@ -54,6 +54,8 @@ Second, run the fake authentication api:
 yarn start-server-auth
 ```
 
+`Important`: You need to run the command above to test the flows
+
 The fake server will be live in (http://localhost:8000)
 
 The list of authenticated users is in the `users.json` file

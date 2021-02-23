@@ -39,14 +39,18 @@ export function* loginUserSaga({
   } catch (error) {
     const responseError: ResponseError = error
 
-    yield put({
-      type: AuthTypes.LOGIN_USER_FAILURE,
-      payload: responseError.response.data.message
-    })
+    if (responseError.response === undefined) {
+      toast.error(`Servidor offline, inicialize-o para testes!`)
+    } else {
+      yield put({
+        type: AuthTypes.LOGIN_USER_FAILURE,
+        payload: responseError.response.data.message
+      })
 
-    if (isMounted) localStorage.removeItem('token')
+      if (isMounted) localStorage.removeItem('token')
 
-    if (responseError.response.data.status === 401)
-      toast.error(`Email ou senha incorreta!`)
+      if (responseError.response.data.status === 401)
+        toast.error(`Email ou senha incorreta!`)
+    }
   }
 }
