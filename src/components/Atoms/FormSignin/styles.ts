@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 
 export const Form = styled.form`
   padding-bottom: 30px;
+  position: 'relative';
 
   ${media.greaterThan('medium')`
       padding-bottom: 0;

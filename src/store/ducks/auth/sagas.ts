@@ -46,6 +46,7 @@ export function* loginUserSaga({
 
     if (isMounted) localStorage.removeItem('token')
 
-    toast.error(`${responseError.response.data.message}`)
+    if (responseError.response.data.status === 401)
+      toast.error(`Email ou senha incorreta!`)
   }
 }
