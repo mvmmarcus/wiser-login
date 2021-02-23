@@ -1,9 +1,13 @@
 
-![WISER LOGIN]
+# WISER LOGIN
 
 This is a [Next.js](https://nextjs.org/) application to selective process for [Wiser Education](https://wisereducacao.com/).
 
 ## What is inside?
+
+### [Live Site](https://netlify...)
+
+![](wiser_login.gif)
 
 This project uses lot of stuff as:
 
@@ -31,6 +35,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
+Second, run the fake authentication api:
+
+```
+yarn start-server-auth
+```
+
+The fake server will be live in (http://localhost:8000)
+
+The list of authenticated users is in the `users.json` file
+
+![Authenticated Users](https://i.ibb.co/Nn2VrY9/users-json.png)
+
+You can change these informations if you want
+
 ## Commands
 
 - `dev`: runs your application on `localhost:3000`
@@ -41,18 +59,16 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - `test:watch`: runs jest in watch mode
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
+- `start-server-auth`: runs mocked authentication api
+- `generate`: create a base components files
 
-## Learn More
+## 👨‍💻 Developer
 
-To learn more about Next.js, take a look at the following resources:
+<table id="contribuicoes" >
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/mvmmarcus/"><img style="border-radius: 50%;" src="https://gitlab.com/uploads/-/system/user/avatar/6195744/avatar.png?width=400" width="100px;" alt=""/><br /><sub><b>Marcus Vinícius</b></sub></a><br /><a href="https://gitlab.com/mvmmarcus" title="Marcus Vinicius">👨‍🚀</a></td>
+  </tr>
+</table>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Developed with ❤️ by <a href="https://www.linkedin.com/in/mvmmarcus/">Marcus Vinícius</a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
