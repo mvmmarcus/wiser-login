@@ -3,7 +3,12 @@ import FormSignin from '.'
 
 export default {
   title: '/Molecules/Form/FormSignin',
-  component: FormSignin
+  component: FormSignin,
+  argTypes: {
+    isSubmiting: {
+      type: 'boolean'
+    }
+  }
 } as Meta
 
 export const Default: Story = (args) => (
@@ -15,6 +20,10 @@ export const Default: Story = (args) => (
       padding: '24px'
     }}
   >
-    <FormSignin onSubmit={() => undefined} {...args} />
+    <FormSignin isSubmiting={false} onSubmit={() => undefined} {...args} />
   </div>
 )
+
+Default.args = {
+  isSubmiting: false
+}

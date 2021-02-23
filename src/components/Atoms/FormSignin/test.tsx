@@ -8,7 +8,7 @@ describe('<FormSignin />', () => {
   it('should render the form', () => {
     const handleSubmit = jest.fn()
 
-    renderWithTheme(<FormSignin onSubmit={handleSubmit} />)
+    renderWithTheme(<FormSignin isSubmiting={false} onSubmit={handleSubmit} />)
 
     const formWrapper = screen.getByTestId('form-wrapper')
     const form = screen.getByTestId('form-form')
@@ -27,7 +27,7 @@ describe('<FormSignin />', () => {
 
   it('Form can be submited & input field is modifiable', async () => {
     const mockOnSubmit = jest.fn()
-    renderWithTheme(<FormSignin onSubmit={mockOnSubmit} />)
+    renderWithTheme(<FormSignin isSubmiting={false} onSubmit={mockOnSubmit} />)
 
     await act(async () => {
       fireEvent.change(screen.getByTestId('form-input-email'), {

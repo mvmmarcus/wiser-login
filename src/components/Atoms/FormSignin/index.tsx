@@ -54,6 +54,7 @@ const FormSignin = ({ onSubmit, isSubmiting }: FormProps) => {
               <Input
                 data-testid="form-input-password"
                 type="password"
+                autoComplete="off"
                 value={values.password}
                 onChange={handleChange('password')}
                 onBlur={handleBlur('password')}
@@ -65,7 +66,11 @@ const FormSignin = ({ onSubmit, isSubmiting }: FormProps) => {
               />
 
               {isSubmiting ? (
-                <Spinner size={40} color={theme.colors.primary} />
+                <Spinner
+                  data-testid="form-spinner"
+                  size={40}
+                  color={theme.colors.primary}
+                />
               ) : (
                 <S.CustomButtonWrapper
                   data-testid="form-button"
