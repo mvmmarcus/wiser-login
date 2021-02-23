@@ -27,7 +27,7 @@ function App({ Component, pageProps }: AppProps) {
           />
           <meta
             name="description"
-            content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
+            content="This is a Nextjs application to selective process for Wiser Education"
           />
         </Head>
         <GlobalStyles />
