@@ -48,8 +48,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
 Second, run the fake authentication api:
 
 ```
@@ -62,7 +60,15 @@ The list of authenticated users is in the `users.json` file
 
 ![Authenticated Users](https://i.ibb.co/Nn2VrY9/users-json.png)
 
-You can change these informations if you want
+You can change these informations if you want. The error message will appear when the user enters their wrong credentials
+
+If the user enters correct credentials, will be redirected to authenticated home page. All the flux is availble to view in the gif video on top of this file !
+
+## Test the components on Storybook
+
+Run the command: `yarn storybook` to view all the components properties of this application 
+
+![storybook components](https://i.ibb.co/WV9FJv8/storybook.png)
 
 ## Commands
 
@@ -75,7 +81,7 @@ You can change these informations if you want
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
 - `start-server-auth`: runs mocked authentication api
-- `generate`: create a base components files
+- `generate`: create the base components files
 
 ## 👨‍💻 Developer
 
