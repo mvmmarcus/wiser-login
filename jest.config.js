@@ -4,6 +4,7 @@ module.exports = {
   },
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  coverageReporters: ['json-summary', 'text', 'lcov'],
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
