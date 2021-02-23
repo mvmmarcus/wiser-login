@@ -1,10 +1,10 @@
 
 # WISER LOGIN
 
-![coverage](/coverage/badge-functions.svg)
-![coverage](/coverage/badge-lines.svg)
-![coverage](/coverage/badge-statements.svg)
-![coverage](/coverage/badge-branches.svg)
+![coverage](/coverages/badge-functions.svg)
+![coverage](/coverages/badge-lines.svg)
+![coverage](/coverages/badge-statements.svg)
+![coverage](/coverages/badge-branches.svg)
 
 This is a [Next.js](https://nextjs.org/) application to selective process for [Wiser Education](https://wisereducacao.com/).
 
