@@ -6,7 +6,7 @@
 ![coverage](/coverages/badge-statements.svg)
 ![coverage](/coverages/badge-branches.svg)
 
-This is a [Next.js](https://nextjs.org/) application to selective process for [Wiser Education](https://wisereducacao.com/).
+This is a [Next.js](https://nextjs.org/) application. It is a simple login and logout application, using Redux and Redux Saga. Its components are available in the Storybook and all are covered by functional tests.
 
 ## What is inside?
 
